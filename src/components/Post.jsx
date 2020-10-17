@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Post({ imageUrl, title, link }) {
   return (
-    <div className="card m-1" style={{ width: "200px", height: "300px" }}>
+    <div className="card m-1  mb-3" style={{ width: "200px", height: "300px" }}>
       <a href={link}>
         <img className="card-img-top" src={imageUrl} alt={title} href={link} style={{ maxWidth: "200px", maxHeight: "200px", minWidth: "150px", minHeight: "150px" }}></img>
       </a>
