@@ -25,7 +25,7 @@ export default function Reddit({ subReddit }) {
 
   return (
     <div className="container-fluid">
-      <h1>{subReddit !== null ? `r/${subReddit}` : null}</h1>
+      <h1>{subReddit !== null ? `r/${subReddit}` : "Search!"}</h1>
       <div className="container-fluid">
         <div className="row">
           {data !== null

@@ -11,20 +11,14 @@ export default function Topbar({ setReddit }) {
   };
   return (
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">reddit-pics</Navbar.Brand>
+      <Navbar.Brand href="/">reddit-pics</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="https://www.github.com/nrowley">
           <FaGithub />
         </Nav.Link>
       </Nav>
       <Form onSubmit={handleSubmit(onSubmit)} inline>
-        <FormControl
-          name="subreddit"
-          type="text"
-          placeholder="Search"
-          className="mr-sm-2"
-          ref={register({ required: "Enter a subreddit to search!" })}
-        />
+        <FormControl name="subreddit" type="text" placeholder="Search" className="mr-sm-2" ref={register({ required: "Enter a subreddit to search!" })} />
         <Button variant="outline-info" type="submit">
           Search
         </Button>
