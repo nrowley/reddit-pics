@@ -18,7 +18,13 @@ export default function Topbar({ setReddit }) {
         </Nav.Link>
       </Nav>
       <Form onSubmit={handleSubmit(onSubmit)} inline>
-        <FormControl name="subreddit" type="text" placeholder="Search" className="mr-sm-2" ref={register({ required: "Enter a subreddit to search!" })} />
+        <FormControl
+          name="subreddit"
+          type="text"
+          placeholder="Search"
+          className="mr-sm-2"
+          ref={register({ required: "Enter a subreddit to search!" })}
+        />
         <Button variant="outline-info" type="submit">
           Search
         </Button>

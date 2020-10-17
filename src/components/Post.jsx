@@ -1,13 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { propTypes } from "react-bootstrap/esm/Image";
 
-/*
-Component for each reddit post.
-*/
-
-export default function Post({ imageUrl, title, link }) {
+function Post({ imageUrl, title, link }) {
   return (
-    <div>
+    <div className="col-sm">
       <img src={imageUrl} alt={title}></img>
     </div>
   );
 }
+
+Post.propTypes = {
+  imageUrl: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
+};
+
+export default Post;
