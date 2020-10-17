@@ -26,13 +26,11 @@ export default function Reddit({ subReddit }) {
   return (
     <div className="container-fluid">
       <h1>{subReddit !== null ? `r/${subReddit}` : null}</h1>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {data !== null
             ? data.data.children.map((post) => {
-                return (
-                  <Post key={post.data.id.toString()} imageUrl={post.data.thumbnail} title={post.data.title} link={redditUrl + post.data.permalink} />
-                );
+                return <Post key={post.data.id.toString()} imageUrl={post.data.thumbnail} title={post.data.title} link={redditUrl + post.data.permalink} />;
               })
             : null}
         </div>
