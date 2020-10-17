@@ -4,11 +4,11 @@ import Topbar from "./components/Topbar.jsx";
 import Reddit from "./components/Reddit.jsx";
 
 function App() {
-  const [data, setData] = useState(null);
+  const [sub, setSub] = useState(null);
   return (
     <div className="App">
-      <Topbar setReddit={(sub) => setData(sub)} />
-      <Reddit subReddit={data} />
+      <Topbar setReddit={(sub) => setSub(sub)} />
+      <Reddit subReddit={sub} />
     </div>
   );
 }

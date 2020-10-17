@@ -18,7 +18,6 @@ export default function Reddit({ subReddit }) {
           setData(res);
         })
         .catch((error) => {
-          //TODO: pass error to navbar component?
           console.log(error);
         });
     }
