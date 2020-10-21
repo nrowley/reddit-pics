@@ -4,6 +4,6 @@
 
 a react app that allows you to search a subreddit for pictures and easy browsing.
 
-# Todos
+## Where can i view it
 
-[x] layout the pictures in a nicer way
+https://redditpictures.herokuapp.com/
